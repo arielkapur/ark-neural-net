@@ -65,3 +65,10 @@ class Matrix:
             dot_product = sum(row[i] * vector.components[i] for i in range(len(row)))
             result.append(dot_product)
         return Vector(result)
+
+u = Vector([1,2])
+v = Vector([1,2,3])
+w = Vector([4,5,6])
+A = Matrix([[1,2],[3,4],[5,6]])
+
+print(A @ u)  # Matrix-vector multiplications
